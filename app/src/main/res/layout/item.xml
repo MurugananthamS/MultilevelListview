@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rlIndicator"
+            android:layout_width="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="20sp">
+
+            <ImageView
+                android:id="@+id/imgArrow"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/svg_arrow_right_filled"
+                tools:ignore="VectorDrawableCompat" />
+
+            <View
+                android:id="@+id/viewDashed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="6dp"
+                android:background="#b5000000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toLeftOf="@+id/rlIndicator"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#ca000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="#30000000"
+                android:textStyle="italic"
+                android:textSize="9sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
